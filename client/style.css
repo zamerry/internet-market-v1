@@ -1,0 +1,204 @@
+body, html {
+    background-color: black;
+    font-size: 24px;
+    color: red;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul, li {
+    list-style: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+input {
+    color: red;
+}
+
+input::placeholder {
+    color: red;
+}
+
+a {
+    color: red;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+body {
+    margin-inline: 100px;
+}
+
+.header {
+    padding-top: 20px;
+}
+
+.header__inner {
+    max-width: 100%;
+    height: 100px;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.header__inner .header__search {
+    max-width: 1000px;
+    width: 100%;
+    height: 80px;
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__search_text {
+    height: 100%;
+    flex-grow: 1;
+}
+
+.header__search_text input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background-color: black;
+    font-size: 24px;
+    padding: 20px;
+}
+
+.header__search .header__search_button {
+    width: 100px;
+    height: 100%;
+    border-left: 1px solid red;
+    color: red;
+    padding: 25px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.header__payment {
+    max-width: 300px;
+    width: 100%;
+    height: 80px;
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__payment_cart,
+.header__payment_money {
+    max-width: 150px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: 25px;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.header__payment_cart {
+    border-right: 1px solid red;
+}
+
+.header__authorization {
+    max-width: 300px;
+    width: 100%;
+    height: 80px;
+    border: 1px solid red;
+    display: flex;
+}
+
+.header__registration,
+.header__login {
+    max-width: 150px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: 25px;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.header__registration {
+    border-right: 1px solid red;
+}
+
+.main__inner {
+    .main__tabs {
+        width: 100%;
+        max-height: 500px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 50px;
+        gap: 20px;
+    }
+}
+
+.main__tab {
+    border: 1px solid red;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: 10px;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.main__table {
+    margin-top: 30px;
+    width: 100%;
+    height: 500px;
+    border: 1px solid red;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 200px;
+    padding: 20px;
+    gap: 20px;
+    overflow: auto;
+}
+
+.main__table_cards {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.footer__inner {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.footer {
+    border: 1px solid red;
+    margin-top: 30px;
+}

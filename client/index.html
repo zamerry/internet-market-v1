@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="client.data.js" type="module" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<header class="header">
+    <div class="header__inner">
+        <div class="header__search">
+            <div class="header__search_text">
+                <input type="text" placeholder="Поиск..." id="search_data">
+            </div>
+            <div class="header__search_button" id="search_data_button">Поиск</div>
+        </div>
+        <div class="header__payment">
+            <div class="header__payment_cart">Корзина</div>
+            <div class="header__payment_money">$<span>0</span></div>
+        </div>
+        <div class="header__authorization">
+            <div class="header__registration">Регистрация</div>
+            <div class="header__login">Войти</div>
+        </div>
+    </div>
+</header>
+<main class="main">
+    <div class="main__inner">
+        <div class="main__tabs">
+            <div class="main__tab" id="category_electronics">Электроника</div>
+            <div class="main__tab" id="category_clothes">Одежда</div>
+            <div class="main__tab" id="category_shoes">Обувь</div>
+        </div>
+        <div class="main__table">
+            <!--<div class="main__table_cards"></div>-->
+        </div>
+    </div>
+</main>
+<footer class="footer">
+    <div class="footer__inner">
+        <p>
+            <a href="https://github.com/zamerry">https://github.com/zamerry</a>
+        </p>
+    </div>
+</footer>
+</body>
+</html>
